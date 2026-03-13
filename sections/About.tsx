@@ -27,9 +27,9 @@ export default function About() {
             SRE para que los equipos de desarrollo puedan desplegar con seguridad y rapidez.
           </p>
           <p>
-            Me gusta bajar la complejidad técnica a diagramas claros, documentación accionable 
-            y planes de implementación que alineen a negocio, equipos de seguridad, desarrollo 
-            y operaciones.
+            He trabajado especialmente en plataformas de <span className="text-cyan-300">e‑commerce</span> 
+            y <span className="text-cyan-300">educación online</span>, donde la disponibilidad, 
+            el rendimiento y la experiencia de usuario son críticos.
           </p>
         </div>
       </div>

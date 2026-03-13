@@ -6,13 +6,41 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    // Simular envío; reemplazar por tu endpoint o servicio (Formspree, Resend, etc.)
-    await new Promise((r) => setTimeout(r, 800));
-    setStatus("sent");
+    setErrorMessage(null);
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        setErrorMessage(data?.error ?? "No se pudo enviar el mensaje.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("sent");
+      (e.target as HTMLFormElement).reset();
+    } catch (err) {
+      console.error(err);
+      setErrorMessage("Error de red. Intenta nuevamente.");
+      setStatus("error");
+    }
   }
 
   return (
@@ -96,7 +124,7 @@ export default function ContactForm() {
           )}
           {status === "error" && (
             <p className="mt-3 text-center text-sm text-red-400">
-              Error al enviar. Intenta de nuevo.
+              {errorMessage ?? "Error al enviar. Intenta de nuevo."}
             </p>
           )}
         </form>

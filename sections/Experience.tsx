@@ -8,6 +8,7 @@ const experiences = [
       "Diseño de arquitecturas cloud resilientes en AWS, GCP y Azure.",
       "Definición de pipelines CI/CD, observabilidad y estrategias de alta disponibilidad.",
       "Acompañamiento técnico a CTOs y equipos para migraciones y modernización.",
+      "Experiencia en plataformas de e‑commerce y educación online con picos de tráfico.",
     ],
   },
   {
@@ -19,6 +20,7 @@ const experiences = [
       "Automatización de infraestructura con Terraform y herramientas de orquestación.",
       "Implementación de monitoreo, alertas y tableros con Prometheus, Grafana y similares.",
       "Hardening de entornos, gestión de secretos y buenas prácticas de seguridad.",
+      "Soporte a equipos de producto de comercio electrónico y plataformas educativas.",
     ],
   },
 ];
