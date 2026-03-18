@@ -44,19 +44,19 @@ export default function Hero() {
           <p className="mb-3 text-xs font-mono uppercase tracking-[0.2em] text-slate-400">
             const developer = {"{"}
           </p>
-          <div className="space-y-1 font-mono text-xs sm:text-sm">
-            <p>
+          <div className="space-y-1 font-mono text-xs sm:text-sm leading-relaxed">
+            <p className="pl-4">
               <span className="text-cyan-400">name</span>:{" "}
               <span className="text-amber-200">&#39;Gilberto Guerrero&#39;</span>,
             </p>
-            <p>
+            <p className="pl-4">
               <span className="text-cyan-400">role</span>:{" "}
               <span className="text-amber-200">
-                &#39;Cloud Architect & Senior SRE&#39;
+                &#39;CEO & SRE / DevOps Consultant&#39;
               </span>
               ,
             </p>
-            <p>
+            <p className="pl-4">
               <span className="text-cyan-400">focus</span>: [
               <span className="text-emerald-300">
                 &#39;arquitecturas escalables&#39;
@@ -65,13 +65,13 @@ export default function Hero() {
               <span className="text-emerald-300">&#39;optimización de costos&#39;</span>
               ],
             </p>
-            <p>
+            <p className="pl-4">
               <span className="text-cyan-400">cloud</span>: [
               <span className="text-emerald-300">&#39;AWS&#39;</span>,{" "}
               <span className="text-emerald-300">&#39;GCP&#39;</span>,{" "}
               <span className="text-emerald-300">&#39;Azure&#39;</span>],
             </p>
-            <p>
+            <p className="pl-4">
               <span className="text-cyan-400">location</span>:{" "}
               <span className="text-amber-200">&#39;Remoto · LATAM / Global&#39;</span>,
             </p>
