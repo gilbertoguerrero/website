@@ -26,7 +26,7 @@ export default function Skills() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
-            04. Skills & Tecnologías
+            05. Skills & Tecnologías
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Tecnologías con las que trabajo.
