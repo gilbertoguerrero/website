@@ -48,10 +48,11 @@ export default function ContactForm() {
       <div className="mx-auto max-w-xl">
         <div className="mb-10 text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Contacto
+            Hablemos de la madurez SRE y DevOps de tu empresa
           </h2>
           <p className="text-slate-400">
-            Cuéntame tu proyecto o necesidad de infraestructura cloud.
+            Cuéntame en qué estado está hoy tu operación y qué te gustaría mejorar. Te
+            responderé con un siguiente paso concreto para tu contexto.
           </p>
         </div>
         <form
@@ -63,7 +64,7 @@ export default function ContactForm() {
               htmlFor="name"
               className="mb-2 block text-sm font-medium text-slate-300"
             >
-              Nombre
+              Nombre y empresa
             </label>
             <input
               id="name"
@@ -71,7 +72,7 @@ export default function ContactForm() {
               type="text"
               required
               className="w-full rounded-lg border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
-              placeholder="Tu nombre"
+              placeholder="Tu nombre y el de tu empresa"
             />
           </div>
           <div className="mb-4">
@@ -95,7 +96,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="mb-2 block text-sm font-medium text-slate-300"
             >
-              Mensaje
+              Descripción breve de tu reto actual
             </label>
             <textarea
               id="message"
@@ -103,7 +104,7 @@ export default function ContactForm() {
               rows={4}
               required
               className="w-full resize-none rounded-lg border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
-              placeholder="Describe tu proyecto o consulta..."
+              placeholder="Por ejemplo: queremos mejorar confiabilidad, automatizar despliegues o reducir costos cloud..."
             />
           </div>
           <button
@@ -117,6 +118,10 @@ export default function ContactForm() {
                 ? "Mensaje enviado"
                 : "Enviar"}
           </button>
+          <p className="mt-4 text-center text-xs text-slate-500">
+            Si prefieres, también puedes escribirme por WhatsApp Business para coordinar
+            directamente el diagnóstico.
+          </p>
           {status === "sent" && (
             <p className="mt-3 text-center text-sm text-cyan-400">
               Gracias. Te responderé pronto.

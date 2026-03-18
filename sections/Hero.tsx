@@ -7,22 +7,23 @@ export default function Hero() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 lg:flex-row">
         <div className="text-left">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
-            01. Arquitecto Cloud & Senior SRE
+            01. CEO & SRE / DevOps Consultant
           </p>
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Hola, soy <span className="text-cyan-300">Gilberto Guerrero</span>.
+            Acelerando la madurez SRE y DevOps de tu empresa.
           </h1>
           <h2 className="mb-6 text-xl font-medium text-slate-200 sm:text-2xl">
-            Diseño y opero plataformas cloud seguras, escalables y eficientes.
+            Soy <span className="text-cyan-300">Gilberto Guerrero</span>, CEO y consultor senior
+            en SRE y DevOps para equipos que necesitan dar el siguiente salto.
           </h2>
           <p className="mb-8 max-w-xl text-lg leading-relaxed text-slate-300">
-            Ayudo a empresas a pasar de infraestructuras frágiles y costosas a
+            Acompaño a empresas a pasar de operaciones reactivas y costosas a
             entornos{" "}
             <span className="text-cyan-300">
-              observables, automatizados y listos para producción
+              confiables, observables y automatizados
             </span>
-            , aplicando principios de SRE, DevOps y buenas prácticas de
-            arquitectura.
+            , con un enfoque práctico en diseño de SLO/SLI, cultura SRE,
+            automatización DevOps y optimización de costos cloud.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a

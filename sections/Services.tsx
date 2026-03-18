@@ -1,21 +1,47 @@
 const services = [
   {
-    title: "AWS Architecture",
+    title: "Asesoría SRE de alto nivel",
     description:
-      "Arquitecturas resilientes y escalables en Amazon Web Services con foco en costos y rendimiento.",
-    highlights: ["Kubernetes", "Terraform", "CI/CD", "Observabilidad"],
+      "Evaluación de madurez, definición de SLO/SLI y diseño de una operación confiable alineada al negocio.",
+    highlights: [
+      "Evaluación de madurez SRE",
+      "SLO / SLI & error budgets",
+      "Gestión de incidentes",
+      "Cultura y procesos SRE",
+    ],
   },
   {
-    title: "GCP Architecture",
+    title: "Consultoría DevOps & CI/CD",
     description:
-      "Soluciones cloud-native en Google Cloud Platform, desde diseño hasta despliegue y monitoreo.",
-    highlights: ["Kubernetes", "Terraform", "CI/CD", "Observabilidad"],
+      "Diseño y optimización de pipelines de integración y entrega continua, integrados con despliegues en Kubernetes (EKS) y contenedores en ECS, con foco en calidad, seguridad y rollback seguro.",
+    highlights: [
+      "Pipelines CI/CD",
+      "DevSecOps",
+      "Automatización de despliegues en EKS/ECS",
+      "Flujos Dev–Ops",
+    ],
   },
   {
-    title: "Azure Architecture",
+    title: "Infraestructura como código & plataformas",
     description:
-      "Implementación y optimización de cargas de trabajo en Microsoft Azure con prácticas enterprise.",
-    highlights: ["Kubernetes", "Terraform", "CI/CD", "Observabilidad"],
+      "Implementación de infraestructura como código y bases para plataformas internas orientadas a equipos de producto.",
+    highlights: [
+      "Terraform / IaC",
+      "Plataformas sobre Kubernetes",
+      "Entornos reproducibles",
+      "Buenas prácticas multi-cloud",
+    ],
+  },
+  {
+    title: "Acompañamiento y mentoring",
+    description:
+      "Trabajo cercano con CTOs y equipos para instalar capacidades SRE y DevOps más allá de un proyecto puntual.",
+    highlights: [
+      "Mentoring a equipos",
+      "Sesiones 1:1 y grupales",
+      "Revisión de arquitecturas",
+      "Roadmaps de madurez",
+    ],
   },
 ];
 
@@ -25,11 +51,12 @@ export default function Services() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Servicios
+            Servicios de asesoría SRE y DevOps
           </h2>
           <p className="mx-auto max-w-2xl text-slate-400">
-            Arquitectura cloud en los principales proveedores con las mejores
-            prácticas de la industria.
+            No solo implemento herramientas: te acompaño a construir una operación SRE y
+            DevOps madura, con una hoja de ruta clara y foco en confiabilidad, velocidad
+            de entrega y costos cloud.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -54,6 +81,33 @@ export default function Services() {
               </ul>
             </article>
           ))}
+        </div>
+        <div className="mt-10 rounded-xl border border-slate-700/60 bg-slate-800/40 p-6 text-sm text-slate-300 sm:p-8">
+          <h3 className="mb-2 text-lg font-semibold text-white">
+            Modelos de trabajo y costos
+          </h3>
+          <p className="mb-3">
+            Trabajo con paquetes de diagnóstico y acompañamiento mensual (retainer) para
+            que puedas avanzar por etapas. Según tu contexto, definimos juntos si tiene
+            más sentido comenzar con un diagnóstico acotado o con un proyecto de
+            implementación específico.
+          </p>
+          <p className="mb-2">
+            Prefiero mantener una conversación directa para ajustar el modelo a tu
+            realidad, pero siempre con transparencia en el alcance y la inversión antes
+            de iniciar.
+          </p>
+          <p className="text-slate-400">
+            Si quieres hablar de costos y del formato que mejor encaja con tu empresa,
+            puedes{" "}
+            <a
+              href="#contacto"
+              className="text-cyan-300 underline-offset-2 hover:underline"
+            >
+              agendar un diagnóstico sin costo
+            </a>
+            .
+          </p>
         </div>
       </div>
     </section>

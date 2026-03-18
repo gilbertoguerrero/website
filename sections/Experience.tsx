@@ -1,14 +1,14 @@
 const experiences = [
   {
     period: "Actualidad",
-    role: "Cloud Architect & Senior SRE",
+    role: "CEO & SRE / DevOps Consultant",
     company: "Consultoría independiente",
     location: "Remoto · LATAM / Global",
     bullets: [
-      "Diseño de arquitecturas cloud resilientes en AWS, GCP y Azure.",
-      "Definición de pipelines CI/CD, observabilidad y estrategias de alta disponibilidad.",
-      "Acompañamiento técnico a CTOs y equipos para migraciones y modernización.",
-      "Experiencia en plataformas de e‑commerce y educación online con picos de tráfico.",
+      "Acompañamiento a empresas para evolucionar su madurez en SRE y DevOps con foco en impacto de negocio.",
+      "Diseño de SLO/SLI, gestión de incidentes y estrategias de observabilidad accionable.",
+      "Definición de pipelines CI/CD integrados con servicios en EKS y ECS, prácticas DevSecOps y optimización de costos cloud.",
+      "Experiencia en plataformas de e‑commerce y educación online en LATAM.",
     ],
   },
   {

@@ -10,26 +10,27 @@ export default function About() {
             02. Sobre mí
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Arquitectura Cloud & SRE para negocios que necesitan escalar.
+            CEO & consultor SRE / DevOps para empresas digitales.
           </h2>
         </div>
         <div className="space-y-4 text-slate-300 lg:w-2/3">
           <p>
             Hola, soy <span className="font-semibold text-white">Gilberto Guerrero</span>, 
-            arquitecto cloud y SRE. Ayudo a compañías a diseñar, modernizar y operar 
+            CEO y consultor especializado en SRE y DevOps. Ayudo a compañías a diseñar, modernizar y operar 
             infraestructura en la nube con foco en <span className="text-cyan-300">confiabilidad</span>,{" "}
             <span className="text-cyan-300">escalabilidad</span> y{" "}
             <span className="text-cyan-300">optimización de costos</span>.
           </p>
           <p>
             Trabajo con entornos multi-cloud (AWS, GCP, Azure), infraestructura como código 
-            (Terraform) y plataformas basadas en Kubernetes, aplicando prácticas DevOps y 
-            SRE para que los equipos de desarrollo puedan desplegar con seguridad y rapidez.
+            (Terraform) y plataformas basadas en Kubernetes, aplicando prácticas SRE y 
+            DevOps para que los equipos de desarrollo puedan desplegar con seguridad y rapidez.
           </p>
           <p>
             He trabajado especialmente en plataformas de <span className="text-cyan-300">e‑commerce</span> 
-            y <span className="text-cyan-300">educación online</span>, donde la disponibilidad, 
-            el rendimiento y la experiencia de usuario son críticos.
+            y <span className="text-cyan-300">educación online</span> en Latinoamérica, con experiencia en 
+            compañías como Dafiti, BigFood, Innova Schools, Siesa Ecommerce, Grupo Educate Colombia y 
+            Los Tres Editores, operando en mercados como Colombia, Brasil, México, Chile y Argentina.
           </p>
         </div>
       </div>
