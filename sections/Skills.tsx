@@ -24,7 +24,7 @@ export default function Skills() {
       className="border-t border-slate-700/50 bg-slate-900 px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-        <div className="mb-10 text-center">
+        <div className="mb-10">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
             05. Skills & Tecnologías
           </p>

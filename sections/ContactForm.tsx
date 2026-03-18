@@ -46,7 +46,7 @@ export default function ContactForm() {
   return (
     <section id="contacto" className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-xl">
-        <div className="mb-10 text-center">
+        <div className="mb-6">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Hablemos de la madurez SRE y DevOps de tu empresa
           </h2>

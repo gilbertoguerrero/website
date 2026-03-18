@@ -11,11 +11,11 @@ export default function SocialProof() {
   return (
     <section id="herramientas" className="border-y border-slate-700/50 bg-slate-800/30 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 text-center">
+        <div className="mb-6">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Herramientas con las que trabajo
           </h2>
-          <p className="mx-auto max-w-xl text-slate-400">
+          <p className="max-w-xl text-slate-400">
             Stack probado en producción para infraestructura, CI/CD y
             observabilidad.
           </p>

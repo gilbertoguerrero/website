@@ -49,7 +49,7 @@ export default function Services() {
   return (
     <section id="servicios" className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-3 text-center">
+        <div className="mb-3">
           <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
             04. Asesorías
           </p>
@@ -57,7 +57,7 @@ export default function Services() {
             Servicios de asesoría SRE y DevOps
           </h2>
         </div>
-        <p className="mx-auto mb-10 max-w-2xl text-center text-slate-400">
+        <p className="mb-10 max-w-2xl text-slate-400">
           No solo implemento herramientas: te acompaño a construir una operación SRE y
           DevOps madura, con una hoja de ruta clara y foco en confiabilidad, velocidad
           de entrega y costos cloud.
