@@ -207,14 +207,6 @@ export default function DiagnosticoPage() {
                   Entrega del PDF de roadmap y sesión de devolución.
                 </li>
               </ol>
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
-              >
-                Agendar diagnóstico inicial (30 min)
-              </a>
             </div>
           </div>
         </section>

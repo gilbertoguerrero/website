@@ -27,10 +27,10 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="#contacto"
+              href="/diagnostico"
               className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
             >
-              Hablemos de tu plataforma
+              Ver diagnóstico SRE & DevOps
             </a>
             <a
               href="#experiencia"
