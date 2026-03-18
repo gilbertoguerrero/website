@@ -1,3 +1,11 @@
+"use client";
+
+function scrollToId(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 export default function Hero() {
   return (
     <section
@@ -32,12 +40,13 @@ export default function Hero() {
             >
               Ver diagnóstico SRE & DevOps
             </a>
-            <a
-              href="#experiencia"
+            <button
+              type="button"
+              onClick={() => scrollToId("experiencia")}
               className="inline-flex items-center justify-center rounded-lg border border-slate-600 bg-slate-800/50 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-400/50 hover:bg-slate-800"
             >
               Ver experiencia
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-full max-w-md rounded-xl border border-slate-700/60 bg-slate-900/80 p-5 text-sm text-slate-200 shadow-lg shadow-cyan-500/5">
