@@ -31,7 +31,7 @@ export default function DiagnosticoPage() {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
               >
-                Agendar diagnóstico inicial (15 min)
+                Agendar diagnóstico inicial (30 min)
               </a>
               <p className="text-xs text-slate-400">
                 Llamada exploratoria para validar encaje y definir alcance del
@@ -190,8 +190,8 @@ export default function DiagnosticoPage() {
               <ol className="space-y-2 text-sm">
                 <li>
                   <span className="font-semibold text-cyan-300">1.</span>{" "}
-                  Llamada inicial de 15 minutos para entender contexto y validar
-                  encaje.
+                  Llamada inicial de 30 minutos para entender contexto y
+                  validar encaje.
                 </li>
                 <li>
                   <span className="font-semibold text-cyan-300">2.</span>{" "}
@@ -213,7 +213,7 @@ export default function DiagnosticoPage() {
                 rel="noreferrer"
                 className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
               >
-                Agendar diagnóstico inicial (15 min)
+                Agendar diagnóstico inicial (30 min)
               </a>
             </div>
           </div>
