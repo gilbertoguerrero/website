@@ -13,9 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gilberto Guerrero | Arquitecto Cloud & Senior SRE",
+  title: "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
   description:
-    "Arquitectura cloud, reducción de costos, escalabilidad y modernización en AWS, GCP y Azure. Gilberto Guerrero - Cloud Architect y DevOps.",
+    "Consultor senior en SRE y DevOps que ayuda a empresas en LATAM a escalar su infraestructura, optimizar costos cloud y mejorar su confiabilidad. Experiencia en ecommerce y educación online con compañías como Dafiti, BigFood, Siesa Ecommerce e Innova Schools.",
+  openGraph: {
+    title:
+      "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
+    description:
+      "Asesoría en SRE y DevOps para empresas que necesitan escalar sin perder confiabilidad. Experiencia en ecommerce y educación online en LATAM.",
+    url: "https://www.gilbertoguerrero.com",
+    type: "website",
+    locale: "es_LA",
+    siteName: "Gilberto Guerrero",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gilberto Guerrero | Consultor SRE & DevOps",
+    description:
+      "Consultor senior en SRE y DevOps para empresas en LATAM. Madurez SRE, DevOps, costos cloud y plataformas en producción.",
+  },
 };
 
 export default function RootLayout({
