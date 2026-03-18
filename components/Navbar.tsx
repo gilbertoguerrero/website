@@ -1,42 +1,52 @@
 "use client";
 
-import Link from "next/link";
+function scrollToId(id: string) {
+  if (typeof document === "undefined") return;
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-700/50 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link
-          href="#inicio"
-          className="text-lg font-semibold tracking-tight text-white transition hover:text-cyan-400"
+        <button
+          type="button"
+          onClick={() => scrollToId("inicio")}
+          className="text-left text-lg font-semibold tracking-tight text-white transition hover:text-cyan-400"
         >
           Gilberto Guerrero
-        </Link>
+        </button>
         <div className="flex gap-6 text-sm font-medium">
-          <Link
-            href="#sobre-mi"
+          <button
+            type="button"
+            onClick={() => scrollToId("sobre-mi")}
             className="text-slate-300 transition hover:text-cyan-400"
           >
             02. Sobre mí
-          </Link>
-          <Link
-            href="#experiencia"
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToId("experiencia")}
             className="text-slate-300 transition hover:text-cyan-400"
           >
             03. Experiencia
-          </Link>
-          <Link
-            href="#skills"
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToId("skills")}
             className="text-slate-300 transition hover:text-cyan-400"
           >
             04. Skills
-          </Link>
-          <Link
-            href="#contacto"
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToId("contacto")}
             className="text-slate-300 transition hover:text-cyan-400"
           >
             05. Contacto
-          </Link>
+          </button>
         </div>
       </div>
     </nav>
