@@ -16,8 +16,11 @@ function goToSection(id: string) {
   } catch {
     // Ignore storage failures (privacy modes, etc.)
   }
-  // La navegación se hará con el router para evitar hashes en la URL.
 }
+
+const navItemClass = "text-slate-300 transition hover:text-cyan-400 whitespace-nowrap";
+const navContactClass =
+  "rounded-lg border border-cyan-500/40 bg-cyan-500/10 px-3 py-1.5 text-cyan-200 transition hover:border-cyan-400/60 hover:bg-cyan-500/15 whitespace-nowrap";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -34,7 +37,6 @@ export default function Navbar() {
 
     if (!id) return;
 
-    // Esperamos a que el DOM de la página destino esté listo.
     const t = window.setTimeout(() => {
       scrollToId(id as string);
       try {
@@ -49,7 +51,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-700/50 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/80">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
         <button
           type="button"
           onClick={() => {
@@ -63,7 +65,7 @@ export default function Navbar() {
         >
           Gilberto Guerrero
         </button>
-        <div className="flex gap-6 text-sm font-medium">
+        <div className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-medium md:gap-x-5">
           <button
             type="button"
             onClick={() => {
@@ -73,22 +75,9 @@ export default function Navbar() {
                 router.push("/");
               }
             }}
-            className="text-slate-300 transition hover:text-cyan-400"
+            className={navItemClass}
           >
-            02. Sobre mí
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              if (pathname === "/") scrollToId("experiencia");
-              else {
-                goToSection("experiencia");
-                router.push("/");
-              }
-            }}
-            className="text-slate-300 transition hover:text-cyan-400"
-          >
-            03. Experiencia
+            Sobre mí
           </button>
           <button
             type="button"
@@ -99,22 +88,22 @@ export default function Navbar() {
                 router.push("/");
               }
             }}
-            className="text-slate-300 transition hover:text-cyan-400"
+            className={navItemClass}
           >
-            04. Asesorías
+            Asesorías
           </button>
           <button
             type="button"
             onClick={() => {
-              if (pathname === "/") scrollToId("skills");
+              if (pathname === "/") scrollToId("metodologia");
               else {
-                goToSection("skills");
+                goToSection("metodologia");
                 router.push("/");
               }
             }}
-            className="text-slate-300 transition hover:text-cyan-400"
+            className={navItemClass}
           >
-            05. Skills
+            Diagnóstico
           </button>
           <button
             type="button"
@@ -125,9 +114,9 @@ export default function Navbar() {
                 router.push("/");
               }
             }}
-            className="text-slate-300 transition hover:text-cyan-400"
+            className={navContactClass}
           >
-            06. Contacto
+            Contacto
           </button>
         </div>
       </div>

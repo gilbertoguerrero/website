@@ -12,7 +12,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <Link
-              href="https://linkedin.com/in/gilbertoguerrero"
+              href="https://www.linkedin.com/company/gilbertoguerrero"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-slate-400 transition hover:text-cyan-400"
@@ -20,15 +20,7 @@ export default function Footer() {
               LinkedIn
             </Link>
             <Link
-              href="https://gilbertoguerrero.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-slate-400 transition hover:text-cyan-400"
-            >
-              Web
-            </Link>
-            <Link
-              href="https://youtube.com/@gilbertoguerrero"
+              href="https://www.youtube.com/@GilbertoGuerreroIA"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-slate-400 transition hover:text-cyan-400"

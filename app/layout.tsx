@@ -20,8 +20,7 @@ export const metadata: Metadata = {
   description:
     "Consultor senior en SRE y DevOps que ayuda a empresas en LATAM a escalar su infraestructura, optimizar costos cloud y mejorar su confiabilidad. Experiencia en ecommerce y educación online con compañías como Dafiti, BigFood, Siesa Ecommerce e Innova Schools.",
   openGraph: {
-    title:
-      "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
+    title: "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
     description:
       "Asesoría en SRE y DevOps para empresas que necesitan escalar sin perder confiabilidad. Experiencia en ecommerce y educación online en LATAM.",
     url: "https://www.gilbertoguerrero.com",

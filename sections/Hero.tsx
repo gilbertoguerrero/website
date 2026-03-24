@@ -15,37 +15,34 @@ export default function Hero() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 lg:flex-row">
         <div className="text-left">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
-            01. CEO & SRE / DevOps Consultant
+            CEO & SRE / DevOps Consultant
           </p>
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Acelerando la madurez SRE y DevOps de tu empresa.
           </h1>
           <h2 className="mb-6 text-xl font-medium text-slate-200 sm:text-2xl">
-            Soy <span className="text-cyan-300">Gilberto Guerrero</span>, CEO y consultor senior
-            en SRE y DevOps para equipos que necesitan dar el siguiente salto.
+            Soy <span className="text-cyan-300">Gilberto Guerrero</span>, CEO y consultor
+            senior en SRE y DevOps para equipos que necesitan dar el siguiente salto.
           </h2>
           <p className="mb-8 max-w-xl text-lg leading-relaxed text-slate-300">
-            Acompaño a empresas a pasar de operaciones reactivas y costosas a
-            entornos{" "}
-            <span className="text-cyan-300">
-              confiables, observables y automatizados
-            </span>
-            , con un enfoque práctico en diseño de SLO/SLI, cultura SRE,
-            automatización DevOps y optimización de costos cloud.
+            De operaciones reactivas y costosas a entornos{" "}
+            <span className="text-cyan-300">confiables, observables y automatizados</span>
+            : SLO/SLI, cultura SRE, DevOps y optimización cloud.
           </p>
-          <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="/diagnostico"
-              className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
-            >
-              Ver diagnóstico SRE & DevOps
-            </a>
+          <div className="flex flex-wrap items-center gap-3">
             <button
               type="button"
-              onClick={() => scrollToId("experiencia")}
-              className="inline-flex items-center justify-center rounded-lg border border-slate-600 bg-slate-800/50 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-400/50 hover:bg-slate-800"
+              onClick={() => scrollToId("metodologia")}
+              className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
             >
-              Ver experiencia
+              Ver diagnóstico y metodología
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToId("contacto")}
+              className="inline-flex items-center justify-center rounded-lg border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-400/50 hover:text-cyan-300"
+            >
+              Agendar o escribir
             </button>
           </div>
         </div>
@@ -67,9 +64,7 @@ export default function Hero() {
             </p>
             <p className="pl-4">
               <span className="text-cyan-400">focus</span>: [
-              <span className="text-emerald-300">
-                &#39;arquitecturas escalables&#39;
-              </span>
+              <span className="text-emerald-300">&#39;arquitecturas escalables&#39;</span>
               , <span className="text-emerald-300">&#39;DevOps / SRE&#39;</span>,{" "}
               <span className="text-emerald-300">&#39;optimización de costos&#39;</span>
               ],
@@ -93,4 +88,3 @@ export default function Hero() {
     </section>
   );
 }
-
