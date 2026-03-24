@@ -32,15 +32,14 @@ export default function MetodologiaDiagnostico() {
     >
       <div className="mx-auto max-w-5xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
-          Metodología · Diagnóstico
+          Health Check SRE & DevOps
         </p>
         <h2 className="mb-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Roadmap de ingeniería en 5 días, no solo parches.
         </h2>
         <p className="mb-10 max-w-2xl text-slate-300">
-          Auditoría de costos cloud, fiabilidad y velocidad de despliegue para equipos que
-          escalan en LATAM. Pensado para CTOs, Heads of Engineering y líderes de
-          plataforma.
+          Un health check accionable: costos cloud, fiabilidad y velocidad de despliegue.
+          Pensado para CTOs, Heads of Engineering y líderes de plataforma en LATAM.
         </p>
 
         <div className="mb-12 grid gap-8 lg:grid-cols-[1fr,1.1fr] lg:items-start">
@@ -59,7 +58,7 @@ export default function MetodologiaDiagnostico() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold text-white">
-              Los 3 pilares del diagnóstico
+              Los 3 pilares del Health Check
             </h3>
             <div className="grid gap-4 sm:grid-cols-3">
               {pilares.map((p, i) => (
@@ -82,16 +81,15 @@ export default function MetodologiaDiagnostico() {
         <div className="grid gap-8 lg:grid-cols-[3fr,2fr]">
           <div>
             <h3 className="mb-3 text-xl font-semibold text-white">Qué recibes</h3>
-            <p className="mb-4 text-sm text-slate-300">
+            <p className="text-sm leading-relaxed text-slate-300">
               En hasta <span className="font-semibold text-cyan-300">5 días hábiles</span>
               , un roadmap accionable para ~90 días: PDF de estado actual (costos,
               resiliencia, CI/CD), <span className="text-cyan-300">Quick Wins</span>,
               propuestas estructurales con esfuerzo estimado y sesión de devolución con tu
-              equipo.
-            </p>
-            <p className="text-xs text-slate-500">
-              A partir de ahí definimos si encaja acompañamiento continuo o un proyecto
-              cerrado.
+              equipo. Con eso en la mesa, en la sesión de cierre vemos juntos si conviene
+              seguir con <span className="font-medium text-slate-200">acompañamiento</span>{" "}
+              o con un <span className="font-medium text-slate-200">proyecto cerrado</span>{" "}
+              sin compromiso hasta que ambos veamos encaje.
             </p>
           </div>
           <div className="rounded-xl border border-slate-700/60 bg-slate-800/40 p-5 text-sm text-slate-300">
@@ -117,16 +115,16 @@ export default function MetodologiaDiagnostico() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
           <ScrollToButton
             targetId="contacto"
-            className="inline-flex w-full items-center justify-center rounded-lg bg-cyan-400 px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-cyan-500/10 transition hover:bg-cyan-300 sm:w-auto"
+            className="inline-flex w-full shrink-0 items-center justify-center rounded-lg bg-cyan-400 px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-cyan-500/10 transition hover:bg-cyan-300 sm:w-auto"
           >
             Agendar llamada exploratoria (30 min)
           </ScrollToButton>
-          <p className="text-xs text-slate-500 sm:max-w-xs">
-            Sin compromiso: validamos encaje y siguiente paso. El calendario está en la
-            sección de contacto.
+          <p className="text-center text-sm leading-relaxed text-slate-400 sm:max-w-md sm:text-left">
+            Sin compromiso: la llamada de 30 min es para validar encaje y acordar el
+            siguiente paso.
           </p>
         </div>
       </div>

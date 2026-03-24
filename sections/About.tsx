@@ -1,23 +1,27 @@
+import { EmpresaLogo } from "@/components/EmpresaLogo";
+
 const empresas = [
-  "Dafiti",
-  "BigFood",
-  "Innova Schools",
-  "Siesa Ecommerce",
-  "Grupo Educate",
-  "Los Tres Editores",
-];
+  { name: "Dafiti", slug: "dafiti" },
+  { name: "Robin Food", slug: "robinfood" },
+  { name: "Innova Schools", slug: "innovaschools" },
+  { name: "Siesa Ecommerce", slug: "siesa" },
+  { name: "Grupo Educate", slug: "grupoeducatecolombia" },
+  { name: "Los Tres Editores", slug: "lostreseditores" },
+] as const;
 
 const stack = [
   "AWS",
   "GCP",
   "Azure",
   "Kubernetes",
+  "EKS / ECS",
   "Terraform",
   "CI/CD",
   "Prometheus",
   "Grafana",
-  "EKS / ECS",
   "SLO / SLI",
+  "Go",
+  "Python",
 ];
 
 export default function About() {
@@ -42,9 +46,8 @@ export default function About() {
             <span className="text-cyan-300">costos bajo control</span>.
           </p>
           <p className="text-sm text-slate-400">
-            Mucha experiencia en <span className="text-slate-300">e‑commerce</span> y{" "}
-            <span className="text-slate-300">educación online</span> en Colombia, Brasil,
-            México, Chile y Argentina.
+            Experiencia profunda en <span className="text-slate-300">e‑commerce</span> y{" "}
+            <span className="text-slate-300">educación online</span> en la región.
           </p>
         </div>
 
@@ -52,21 +55,20 @@ export default function About() {
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
             Equipos y empresas con las que he trabajado
           </p>
-          <div className="flex flex-wrap gap-2 sm:gap-3">
-            {empresas.map((nombre) => (
-              <span
-                key={nombre}
-                className="rounded-lg border border-slate-600/60 bg-slate-800/50 px-3 py-2 text-sm font-medium text-slate-200"
-              >
-                {nombre}
-              </span>
+          <div className="grid grid-cols-2 justify-items-center gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+            {empresas.map((empresa) => (
+              <EmpresaLogo
+                key={empresa.slug}
+                name={empresa.name}
+                slug={empresa.slug}
+              />
             ))}
           </div>
         </div>
 
         <div>
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
-            Stack y prácticas
+            Cloud, plataformas y automatización
           </p>
           <div className="flex flex-wrap gap-2">
             {stack.map((item) => (

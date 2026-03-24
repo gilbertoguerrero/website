@@ -43,12 +43,33 @@ const services = [
       "Roadmaps de madurez",
     ],
   },
+  {
+    title: "Health Check y roadmap en 5 días",
+    description:
+      "Paquete cerrado: en pocos días auditamos costos cloud, CI/CD y fiabilidad, y entregamos un plan de acción real, no solo hallazgos sueltos.",
+    highlights: [
+      "PDF con estado y prioridades",
+      "Quick wins y cambios estructurales",
+      "Sesión de cierre con tu equipo",
+    ],
+  },
+  {
+    title: "Modelos de colaboración",
+    description:
+      "Madurez SRE, pipelines, plataformas y acompañamiento con ruta clara: definimos juntos si arrancamos por un diagnóstico, un retainer o un proyecto acotado.",
+    highlights: [
+      "Diagnóstico puntual",
+      "Retainer / acompañamiento",
+      "Proyecto cerrado (CI/CD, K8s, etc.)",
+      "Alcance e inversión claros",
+    ],
+  },
 ];
 
 export default function Services() {
   return (
     <section id="servicios" className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-5xl">
         <div className="mb-3">
           <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
             Asesorías
@@ -57,10 +78,12 @@ export default function Services() {
             Qué hago contigo
           </h2>
         </div>
-        <p className="mb-10 max-w-2xl text-slate-400">
-          Madurez SRE y DevOps con ruta clara: confiabilidad, velocidad de entrega y
-          costos cloud — sin quedarnos solo en herramientas.
-        </p>
+        <div className="mb-10 max-w-3xl rounded-xl border border-cyan-500/25 bg-cyan-500/[0.06] p-5 sm:p-6">
+          <p className="text-base font-medium leading-relaxed text-slate-100 sm:text-lg">
+            No te vendo horas, te vendo claridad. En 5 días auditamos tus costos, tu CI/CD
+            y tu fiabilidad para entregarte un plan de acción real.
+          </p>
+        </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <article
@@ -82,24 +105,16 @@ export default function Services() {
             </article>
           ))}
         </div>
-        <div className="mt-10 rounded-xl border border-slate-700/60 bg-slate-800/40 p-6 text-sm text-slate-300 sm:p-8">
-          <h3 className="mb-2 text-lg font-semibold text-white">
-            Cómo encaja la colaboración
-          </h3>
-          <p className="mb-3 text-slate-400">
-            Diagnóstico, retainer u proyecto cerrado: lo definimos según tu contexto, con
-            alcance e inversión claros antes de arrancar.
-          </p>
-          <p>
-            <a
-              href="#contacto"
-              className="font-medium text-cyan-300 underline-offset-2 hover:underline"
-            >
-              Ir a contacto y agendar
-            </a>{" "}
-            <span className="text-slate-500">(calendario o mensaje).</span>
-          </p>
-        </div>
+        <p className="mt-10 text-center text-sm text-slate-500">
+          ¿Siguiente paso?{" "}
+          <a
+            href="#contacto"
+            className="font-medium text-cyan-300 underline-offset-2 hover:underline"
+          >
+            Contacto y calendario
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

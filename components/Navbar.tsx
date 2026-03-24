@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-700/50 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/80">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
         <button
           type="button"
           onClick={() => {
@@ -103,7 +103,7 @@ export default function Navbar() {
             }}
             className={navItemClass}
           >
-            Diagnóstico
+            Health Check
           </button>
           <button
             type="button"

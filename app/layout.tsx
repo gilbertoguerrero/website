@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
   description:
-    "Consultor senior en SRE y DevOps que ayuda a empresas en LATAM a escalar su infraestructura, optimizar costos cloud y mejorar su confiabilidad. Experiencia en ecommerce y educación online con compañías como Dafiti, BigFood, Siesa Ecommerce e Innova Schools.",
+    "Consultor senior en SRE y DevOps que ayuda a empresas en LATAM a escalar su infraestructura, optimizar costos cloud y mejorar su confiabilidad. Experiencia en ecommerce y educación online con compañías como Dafiti, Robin Food, Siesa Ecommerce e Innova Schools.",
   openGraph: {
     title: "Gilberto Guerrero | Consultor SRE & DevOps para empresas en LATAM",
     description:

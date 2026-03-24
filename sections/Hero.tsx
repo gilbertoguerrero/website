@@ -35,7 +35,7 @@ export default function Hero() {
               onClick={() => scrollToId("metodologia")}
               className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300"
             >
-              Ver diagnóstico y metodología
+              Quiero mi Health Check
             </button>
             <button
               type="button"
@@ -48,7 +48,7 @@ export default function Hero() {
         </div>
         <div className="w-full max-w-md rounded-xl border border-slate-700/60 bg-slate-900/80 p-5 text-sm text-slate-200 shadow-lg shadow-cyan-500/5">
           <p className="mb-3 text-xs font-mono uppercase tracking-[0.2em] text-slate-400">
-            const developer = {"{"}
+            const architect = {"{"}
           </p>
           <div className="space-y-1 font-mono text-xs sm:text-sm leading-relaxed">
             <p className="pl-4">

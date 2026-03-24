@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/sections/Hero";
+import LatamStrip from "@/sections/LatamStrip";
 import About from "@/sections/About";
 import Services from "@/sections/Services";
 import MetodologiaDiagnostico from "@/sections/MetodologiaDiagnostico";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <LatamStrip />
         <About />
         <Services />
         <MetodologiaDiagnostico />
