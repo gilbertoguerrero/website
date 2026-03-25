@@ -37,13 +37,21 @@ export default function About() {
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Credibilidad en SRE y DevOps, con foco en negocio.
         </h2>
-        <div className="mb-10 max-w-2xl space-y-4 text-slate-300">
-          <p>
-            Soy <span className="font-semibold text-white">Gilberto Guerrero</span>, CEO y
-            consultor senior en SRE y DevOps. Acompaño a empresas a operar la nube con{" "}
-            <span className="text-cyan-300">confiabilidad</span>,{" "}
-            <span className="text-cyan-300">escala</span> y{" "}
-            <span className="text-cyan-300">costos bajo control</span>.
+        <div className="mb-10 max-w-2xl space-y-5 text-slate-300">
+          <p className="text-base leading-relaxed sm:text-lg">
+            Soy <span className="font-semibold text-white">Gilberto Guerrero</span>,{" "}
+            <span className="text-cyan-300">Cloud Architect</span> y consultor senior en{" "}
+            <span className="text-cyan-300">SRE & DevOps</span>. Ayudo a equipos de{" "}
+            <span className="font-medium text-slate-200">alto rendimiento</span> a dar el
+            siguiente salto tecnológico.
+          </p>
+          <p className="leading-relaxed text-slate-300">
+            Diseño <span className="font-medium text-slate-200">arquitecturas cloud resilientes</span>{" "}
+            y transformo operaciones reactivas en entornos{" "}
+            <span className="text-cyan-300">confiables</span>,{" "}
+            <span className="text-cyan-300">observables</span> y{" "}
+            <span className="text-cyan-300">automatizados</span>: SLO/SLI, cultura SRE y
+            optimización de costos.
           </p>
           <p className="text-sm text-slate-400">
             Experiencia profunda en <span className="text-slate-300">e‑commerce</span> y{" "}

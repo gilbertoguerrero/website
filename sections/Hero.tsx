@@ -15,19 +15,21 @@ export default function Hero() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 lg:flex-row">
         <div className="text-left">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
-            CEO & SRE / DevOps Consultant
+            Cloud Architect · SRE & DevOps
           </p>
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Acelerando la madurez SRE y DevOps de tu empresa.
           </h1>
-          <h2 className="mb-6 text-xl font-medium text-slate-200 sm:text-2xl">
-            Soy <span className="text-cyan-300">Gilberto Guerrero</span>, CEO y consultor
-            senior en SRE y DevOps para equipos que necesitan dar el siguiente salto.
+          <h2 className="mb-6 text-xl font-medium leading-snug text-slate-200 sm:text-2xl">
+            Soy <span className="text-cyan-300">Gilberto Guerrero</span>, Cloud Architect y
+            consultor senior en SRE & DevOps. Ayudo a equipos de alto rendimiento a dar el
+            siguiente salto tecnológico.
           </h2>
           <p className="mb-8 max-w-xl text-lg leading-relaxed text-slate-300">
-            De operaciones reactivas y costosas a entornos{" "}
+            Diseño arquitecturas cloud resilientes y transformo operaciones reactivas en
+            entornos{" "}
             <span className="text-cyan-300">confiables, observables y automatizados</span>
-            : SLO/SLI, cultura SRE, DevOps y optimización cloud.
+            : SLO/SLI, cultura SRE y optimización de costos.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <button
@@ -58,7 +60,7 @@ export default function Hero() {
             <p className="pl-4">
               <span className="text-cyan-400">role</span>:{" "}
               <span className="text-amber-200">
-                &#39;CEO & SRE / DevOps Consultant&#39;
+                &#39;Cloud Architect & SRE / DevOps&#39;
               </span>
               ,
             </p>

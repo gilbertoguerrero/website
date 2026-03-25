@@ -21,16 +21,9 @@ export default function Contacto({ calendlyBaseUrl, recaptchaSiteKey }: Contacto
           Da el siguiente paso
         </h2>
         <p className="mb-8 max-w-2xl text-slate-400">
-          Lo más directo es reservar un hueco en mi calendario. Si prefieres escribir
-          primero, usa el formulario más abajo.
+          Reserva una sesión estratégica directamente en mi calendario para revisar tu arquitectura.
+          Si prefieres iniciar la conversación por escrito, enviame un correo.
         </p>
-
-        <ScrollToButton
-          targetId="calendly-agenda"
-          className="mb-10 inline-flex w-full items-center justify-center rounded-lg bg-cyan-400 px-8 py-4 text-base font-semibold text-slate-900 shadow-lg shadow-cyan-500/15 transition hover:bg-cyan-300 sm:w-auto"
-        >
-          Abrir calendario y agendar
-        </ScrollToButton>
 
         <CalendlyBooking calendlyBaseUrl={calendlyBaseUrl} embedded />
 

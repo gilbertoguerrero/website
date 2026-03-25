@@ -105,16 +105,15 @@ export default function Services() {
             </article>
           ))}
         </div>
-        <p className="mt-10 text-center text-sm text-slate-500">
-          ¿Siguiente paso?{" "}
+        <div className="mt-12 flex flex-col items-center gap-4 text-center">
+          <p className="text-sm font-medium text-slate-400">¿Siguiente paso?</p>
           <a
             href="#contacto"
-            className="font-medium text-cyan-300 underline-offset-2 hover:underline"
+            className="inline-flex min-w-[220px] items-center justify-center rounded-lg bg-cyan-400 px-8 py-3.5 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/15 transition hover:bg-cyan-300"
           >
-            Contacto y calendario
+            Agendar llamada exploratoria (30 min)
           </a>
-          .
-        </p>
+        </div>
       </div>
     </section>
   );
