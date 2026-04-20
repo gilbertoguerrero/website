@@ -1,7 +1,7 @@
 "use client";
 
 import Script from "next/script";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const RECAPTCHA_ACTION = "contact";
 
@@ -17,8 +17,19 @@ export default function ContactForm({
   embedded = false,
 }: ContactFormProps) {
   const [recaptchaReady, setRecaptchaReady] = useState(false);
+  const [scriptLoadError, setScriptLoadError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  /** Si el script ya está en el DOM (p. ej. tras remount en React Strict Mode), onLoad no vuelve a ejecutarse. */
+  useEffect(() => {
+    if (!recaptchaSiteKey || typeof window === "undefined" || !window.grecaptcha) {
+      return;
+    }
+    window.grecaptcha.ready(() => {
+      setRecaptchaReady(true);
+    });
+  }, [recaptchaSiteKey]);
 
   async function getRecaptchaToken(): Promise<string | null> {
     if (typeof window === "undefined" || !window.grecaptcha) {
@@ -28,7 +39,8 @@ export default function ContactForm({
       return await window.grecaptcha.execute(recaptchaSiteKey, {
         action: RECAPTCHA_ACTION,
       });
-    } catch {
+    } catch (err) {
+      console.error("reCAPTCHA execute falló", err);
       return null;
     }
   }
@@ -102,9 +114,19 @@ export default function ContactForm({
 
   const script = recaptchaSiteKey ? (
     <Script
-      src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
+      src={`https://www.google.com/recaptcha/api.js?render=${encodeURIComponent(recaptchaSiteKey)}`}
       strategy="afterInteractive"
-      onLoad={() => setRecaptchaReady(true)}
+      onLoad={() => {
+        setScriptLoadError(null);
+        if (typeof window !== "undefined" && window.grecaptcha) {
+          window.grecaptcha.ready(() => setRecaptchaReady(true));
+        }
+      }}
+      onError={() => {
+        setScriptLoadError(
+          "No se pudo cargar la verificación de seguridad. Si usas un bloqueador de anuncios, permite scripts de Google en este sitio o prueba otra red."
+        );
+      }}
     />
   ) : null;
 
@@ -123,7 +145,7 @@ export default function ContactForm({
           type="text"
           required
           className="w-full rounded-lg border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
-          placeholder="Tu nombre y el de tu empresa"
+          placeholder="Tu nombre completo y el de tu empresa"
         />
       </div>
       <div className="mb-4">
@@ -199,6 +221,9 @@ export default function ContactForm({
         <p className="mt-3 text-center text-sm text-cyan-400">
           Gracias. Te responderé pronto.
         </p>
+      )}
+      {scriptLoadError && (
+        <p className="mt-3 text-center text-sm text-amber-400">{scriptLoadError}</p>
       )}
       {status === "error" && (
         <p className="mt-3 text-center text-sm text-red-400">

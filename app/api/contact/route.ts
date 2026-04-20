@@ -29,12 +29,15 @@ async function verifyRecaptchaV3(token: string): Promise<boolean> {
   });
   const data = (await res.json()) as SiteVerifyResponse;
   if (!data.success) {
+    console.error("reCAPTCHA siteverify rechazó el token", data["error-codes"] ?? data);
     return false;
   }
   if (data.action !== RECAPTCHA_EXPECTED_ACTION) {
+    console.error("reCAPTCHA acción inesperada", data.action, "esperada", RECAPTCHA_EXPECTED_ACTION);
     return false;
   }
   if (typeof data.score !== "number" || data.score < minScore) {
+    console.error("reCAPTCHA score insuficiente", data.score, "mínimo", minScore);
     return false;
   }
   return true;
